@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "craftablegodapple",
+	"version": "${version}",
+	"name": "Craftable Enchanted golden apple",
+	"description": "Adds the removed recipe for crafting enchanted golden apples",
+	"authors": [
+		"Colliefarmer"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/craftablegodapple/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.collie1.craftablegodapple.CraftableGodApple"
+		],
+		"fabric-datagen": [
+			"io.github.collie1.craftablegodapple.CraftableGodAppleDataGenerator"
+		]
+	},
+	"mixins": [
+		"craftablegodapple.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
